@@ -1,0 +1,173 @@
+:root {
+  --mer: #1d7fa8;
+  --nuit: #0f3a4f;
+  --sable: #fdf6e8;
+  --soleil: #e8a33d;
+  --rouge: #b3261e;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: var(--sable);
+  color: #333333;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 40px;
+}
+
+h1 {
+  color: var(--mer);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+header p {
+  text-align: center;
+}
+
+h2 {
+  color: var(--nuit);
+  border-bottom: 2px solid var(--soleil);
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  background-color: var(--nuit);
+}
+
+nav a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: var(--mer);
+}
+
+.grille {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.carte {
+  background-color: white;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.prix {
+  font-weight: bold;
+  color: var(--mer);
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+.Rs{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 25px;
+  font-weight: bolder;
+  color: var(--nuit);
+
+}
+thead {
+  background-color: #e3f2f8;
+}
+
+fieldset {
+  border: 1px solid var(--mer);
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-weight: bold;
+  color: var(--nuit);
+}
+
+input[type="text"], input[type="email"], input[type="tel"],
+input[type="date"], input[type="number"], select, textarea {
+  width: 100%;
+  max-width: 350px;
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+
+.erreur {
+  display: block;
+  color: var(--rouge);
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: var(--mer);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#succes {
+  background-color: #e3f6e8;
+  border: 1px solid #2f8f4e;
+  padding: 1rem;
+}
+
+footer {
+  background-color: var(--nuit);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+footer a {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .grille {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .grille {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
